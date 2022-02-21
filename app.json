@@ -1,0 +1,24 @@
+{
+  "name": "SuperRentals",
+  "description": "A rentals app developed using EmberJS 2.18",
+  "repository": "https://github.com/osule/super-rental-emberjs",
+  "logo": "https://raw.githubusercontent.com/osule/super-rental-emberjs/master/public/assets/images/teaching.png",
+  "keywords": ["node", "emberjs", "heroku", "static"],
+  "env": {
+    "GOOGLE_MAPS_API_KEY": {
+      "description": "Google Maps API Key with access to Geocoding service and Maps Javascript API for generating map elements.",
+      "required": true,
+      "generator": "secret"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/static"
+    }
+  ],
+  "success_url": "/"
+}
+
